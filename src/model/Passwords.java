@@ -5,15 +5,16 @@ import java.util.ArrayList;
 public class Passwords {
     private ArrayList <String> passwords;
 
-    public Passwords(ArrayList <String> passwords){
-        this.passwords = passwords;
+
+    public Passwords(){
+        passwords = new ArrayList<>();
     }
 
-    public ArrayList<String> getPasswords() {
-        return passwords;
+    public String getPasswords(int index) {
+        return passwords.get(index);
     }
 
-    public void setPasswords(ArrayList<String> passwords) {
-        this.passwords = passwords;
+    public void setPasswords(String password) {
+        passwords.add(password);
     }
 }
